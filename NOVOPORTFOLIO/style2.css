@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+.botao{
+   margin-left: 30%;
+    font-size: 25px;
+}
+header .botao a{
+    color:#ffffff;
+    display: inline-block;
+    transition: .2s;
+  
+    
+}
+header .botao a:hover{
+    color: #aecef3;
+    transform: scale(1.1)
+}
+
+
+.textodapagina .texto .textotopo button{
+    padding: 20px 1em;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    border:#1b2d42 solid ;
+    color: #1b2d42;
+    transition: 0.3s ease all;
+    z-index: 1;
+    letter-spacing: 2px;
+
+
+
+}
+
+.textodapagina .texto .textotopo button:hover:before, button:focus:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.textodapagina .texto .textotopo button:hover, button:focus{
+    color: white;
+
+}
+.textodapagina .texto .textotopo button:active{
+    transform:scale(0.9);
+}
+.textodapagina .texto .textotopo button:before{
+    background-color: #1b2d42;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0%;
+    right: 50%;
+    opacity: 0;
+    content: '';
+    transition: 0.5s all ease;
+}
+
+
+
+body{
+
+background: linear-gradient(#101a25,#1c426b);
+}
+
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+   
+}
+header a {
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2;
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 10px;
+    }
+}
+    
+
+.barra{
+    height: 20px;
+    width: 100%;
+    background-color:#4a6c92;
+   
+
+}
+.barra2{
+    height: 5px;
+    width: 100%;
+    background-color:#4a6c92;
+    margin-top: 20px;
+  
+}
+.container .icones{
+    gap: 40px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    gap: 150px;
+    margin-top: 40px;
+}
+.container .menu-logo h1{
+    background: linear-gradient(#4a6c92,#3da6b4);
+    background-size: 200%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background-clip: text;
+    color: transparent;
+    animation: anima 2s infinite linear;
+}
+@keyframes anima {
+  
+    0%{
+        background-position: 0%;
+
+    }
+    100%{
+        background-position: 200%;
+    }
+    
+}
+
+
+.container .icones{
+    display: flex;
+}
+.container .menu-logo{
+    margin-left: 60px;
+}
+
+section.textodapagina{
+    padding: 20px 4%;
+
+}
+section.textodapagina .flex{
+ align-items: center;
+display: flex;
+ gap: 50px;
+}
+.textotopo{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+color: #ffffff;
+}
+.textotopo span{
+  
+color: #aecef3;
+}
+.textodapagina h1{
+    font-size: 40px;
+    line-height: 40px;
+    margin: 40px 4%;
+    
+}
+.textodapagina p{
+    font-size: 20px;
+    gap: 10px;
+    color: #2a3153;
+    margin: 40px 4%;
+
+}
+.projetos {
+  display: flex;
+  gap: 40px;
+}
+.projetos .retangulo{
+  margin-top: 30px;
+  margin-left: 10rem;
+  height:50rem;
+  width: 30rem;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  border: #1b2d42 solid 2px;
+  margin-top: 30px;
+}
+.projetos .retangulo img{
+  margin: 50px;
+  width: 400px;
+}
+.projetos .retangulo h3{
+   background: linear-gradient(#4a6c92,#3da6b4);
+   font-size: 40px;
+   margin-top: 30px;
+  text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background-clip: text;
+    color: transparent;
+ 
+}
+.projetos .retangulo button{
+  padding: 30px 30px;
+  border-radius: 20px;
+  background-color: #1b2d42;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-left: 160px;
+  cursor: pointer;
+}
